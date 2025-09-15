@@ -2,7 +2,7 @@
 //  AUCitiesApp.swift
 //  AUCities
 //
-//  Created by ADMIN on 15/09/25.
+//  Created by Sourabh on 15/09/25.
 //
 
 import SwiftUI
@@ -11,7 +11,8 @@ import SwiftUI
 struct AUCitiesApp: App {
     var body: some Scene {
         WindowGroup {
-            AUCities()
+            AUStates(viewModel: AUCitiesViewModel(service: AUCityServiceImpl()))
+                .background(Color("Appbackground"))
         }
     }
 }
